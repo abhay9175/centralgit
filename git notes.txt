@@ -60,3 +60,4 @@ HEAD − This file stores reference to the current branch. It points to the mast
 
 index − This is a binary file and stores staging information
 COMMIT_EDITMSG:- latest commit msg for edititing
+git rm --cached filename  [to make untracked file from commit stage]
