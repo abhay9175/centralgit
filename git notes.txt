@@ -1,0 +1,62 @@
+sudo yum update -y
+yum install git -y
+mkdir gitrepo
+cd gitrepo
+git init
+create file in git repo with data
+
+*create the user
+git config --global user.name "abhay"
+git config --global user.email "abhay@gmail.com"
+git config --list
+
+git add .
+git show
+git status
+git log
+git commit -m "first commit from ins"
+git remote add origin (url of github repository)
+git push origin master
+git pull origin master 
+gitignore
+git checkout master or branch1 (where u can go) or
+git switch <branch name>
+
+#create new branch & switch to this branch
+git checkout -b <branch name>
+
+#how to see which remote repo you connected 
+git remote or git remote -v
+
+*(go to master branch then hit this command)
+git merge (branch name)
+git stash
+git stash list
+git stash apply stash@{1}
+
+#how to revert the files
+git revert (commit id)
+
+#how to remove untracked file
+git clean -n (dry run means before remove notify for delete)
+git clean -f (remove without notify)
+
+#how to tag on files
+git tag -a <tag name> -m "message for tag" commit id
+
+#how to clone central repository from github
+git clone <url of central repo of github> 
+
+#under the file of .git 
+hooks − This folder contains script files. Git hooks are the scripts that are executed before or after events like commit, push etc.
+
+objects − This folder represents an object database of Git.
+
+config − This is the local configuration file.
+
+refs − This folder stores information about tags and branches.
+
+HEAD − This file stores reference to the current branch. It points to the master branch by default.
+
+index − This is a binary file and stores staging information
+COMMIT_EDITMSG:- latest commit msg for edititing
